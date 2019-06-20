@@ -1,0 +1,62 @@
+[
+  {
+    "HospitalId": "1",
+    "HospitalName": "Advent Health",
+    "StreetAddress": "400 Celebration Pl",
+    "StreetAddress2": "Suite A300",
+    "City": "Celebration",
+    "StateProvince": "FL",
+    "Zipcode": "34747",
+    "AnnualBudget": "150000000.00",
+    "BedCount": "987",
+    "DateCreated": "2019-06-19T16:16:57.7533333"
+  },
+  {
+    "HospitalId": "2",
+    "HospitalName": "Orlando Health",
+    "StreetAddress": "9400 Turkey Lake Rd",
+    "StreetAddress2": "",
+    "City": "Dr Phillips",
+    "StateProvince": "FL",
+    "Zipcode": "32819",
+    "AnnualBudget": "45000000.00",
+    "BedCount": "433",
+    "DateCreated": "2019-06-19T16:16:57.7533333"
+  },
+  {
+    "HospitalId": "3",
+    "HospitalName": "Nemours Childrens Hospital",
+    "StreetAddress": "13535 Nemours Pkwy",
+    "StreetAddress2": "Building 955",
+    "City": "Orlando",
+    "StateProvince": "FL",
+    "Zipcode": "32827",
+    "AnnualBudget": "95000000.00",
+    "BedCount": "325",
+    "DateCreated": "2019-06-19T16:16:57.7533333"
+  },
+  {
+    "HospitalId": "4",
+    "HospitalName": "St Jude Childrens Hospital",
+    "StreetAddress": "262 Danny Thomas Pl",
+    "StreetAddress2": "",
+    "City": "Memphis",
+    "StateProvince": "TN",
+    "Zipcode": "38105",
+    "AnnualBudget": "100000000.00",
+    "BedCount": "1025",
+    "DateCreated": "2019-06-19T16:16:57.7533333"
+  },
+  {
+    "HospitalId": "5",
+    "HospitalName": "John Hopkins Hospital",
+    "StreetAddress": "1800 Orleans St",
+    "StreetAddress2": "",
+    "City": "Baltimore",
+    "StateProvince": "MD",
+    "Zipcode": "21287",
+    "AnnualBudget": "725000000.00",
+    "BedCount": "9500",
+    "DateCreated": "2019-06-19T16:16:57.7533333"
+  }
+]

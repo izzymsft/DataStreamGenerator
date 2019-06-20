@@ -4,9 +4,10 @@ IF OBJECT_ID('dbo.Patients', 'U') IS NOT NULL
 CREATE TABLE dbo.Patients --- Stores information about the Patients
 (
     TransactionId int IDENTITY (1,1) NOT NULL,   --- Primary Key for the Score
-    PatientId VARCHAR(40) NOT NULL,              --- Id Uniquely Identifies the Patient
-    FirstName VARCHAR(32) NOT NULL,              --- Id Uniquely Identifies the Patient
-    LastName VARCHAR(32) NOT NULL,               --- Id Uniquely Identifies the Patient
+    PatientId VARCHAR(40) NOT NULL UNIQUE,       --- Id Uniquely Identifies the Patient
+    FirstName VARCHAR(32) NOT NULL,              --- First Name of the Patient
+    LastName VARCHAR(32) NOT NULL,               --- Last Name of the Patient
+    ProfileURL VARCHAR(1024) NOT NULL,           --- Profile URL of the Patient
     Gender CHAR(1) NOT NULL,                     --- Gender of Patient 
     BodyWeight DECIMAL(5,2) NOT NULL,            --- The Patient Body Weight
     DateOfBirth date NOT NULL,                   --- The Patient DOB
@@ -36,5 +37,18 @@ CREATE TABLE dbo.Hospitals --- Stores information about the Hospitals
     Zipcode VARCHAR(5) NOT NULL,             --- Postal Code or Zipcode
     AnnualBudget DECIMAL(15,2) NOT NULL,     --- Annual Budget for the Hospital
     BedCount int NOT NULL,                   --- Number of Beds in the Facility
+    LogoURL VARCHAR(1024) NOT NULL,          --- The URL for the facility logo
+    DateCreated datetime2 NOT NULL           --- The timestamp for when this record was created
+);
+
+
+IF OBJECT_ID('dbo.HospitalFeedback', 'U') IS NOT NULL 
+  DROP TABLE dbo.HospitalFeedback;
+
+CREATE TABLE dbo.HospitalFeedback --- Stores information about the Hospitals
+(
+    FeedbackId int IDENTITY (1,1) NOT NULL,  --- Primary Key for the Record
+    FeedbackLanguage VARCHAR(5) NOT NULL,    --- Language for the Content
+    FeedbackContent VARCHAR(1024) NOT NULL,  --- The URL for the facility logo
     DateCreated datetime2 NOT NULL           --- The timestamp for when this record was created
 );
